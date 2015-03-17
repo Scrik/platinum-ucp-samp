@@ -1,0 +1,28 @@
+@font-face {
+    font-family:'font';
+    src: url('/assets/view/fonts/arial.ttf');
+}
+
+#image {
+    font-family:font;
+}
+
+.userbar input:checked + img {
+    opacity:1;
+}
+.userbar input {
+    display:none;
+}
+.userbar img { 
+    opacity: 0.5;
+    width: 25%; 
+    height: 25%; 
+}
+.userbar img:hover { 
+    opacity: 1;
+    cursor: pointer;
+}
+
+.dragText {
+    cursor: move;
+}

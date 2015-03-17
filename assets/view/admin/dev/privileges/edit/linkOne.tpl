@@ -1,0 +1,1 @@
+<li role="presentation" class="{active}"><a href="#{name}" id="tab" aria-controls="{name}" role="tab" data-toggle="tab">{title}</a></li>

@@ -1,0 +1,1 @@
+<option data-img-src="/assets/view/images/userbar/{name}" value="{name}" {selected}>{name}</option>

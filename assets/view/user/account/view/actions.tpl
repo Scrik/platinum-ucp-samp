@@ -1,0 +1,1 @@
+<li role="presentation"><a href="#actions" id="tab" aria-controls="actions" role="tab" data-toggle="tab">Действия</a></li>

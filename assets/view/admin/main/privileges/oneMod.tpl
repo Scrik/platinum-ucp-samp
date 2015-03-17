@@ -1,0 +1,1 @@
+<li><a href="/admin/main/get/{type}/{name}/">{title}</a></li>

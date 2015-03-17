@@ -1,0 +1,1 @@
+<li><a href="/message/view/{id}/">{title}</a> (<i>Отправитель: <a href="/user/view/{from}/">{from}</a></i>)</li>

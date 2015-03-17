@@ -1,0 +1,1 @@
+<br><span class="toSpan dragText" top="{pos_top}" left="{pos_left}" fontSize="{fontSize}" id="{name}" style="color: {color};">{title}: {value}</span>
