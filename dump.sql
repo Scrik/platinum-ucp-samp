@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `name`, `pass`, `mail`, `leader`, `member`, `rank`, `ip`, `date`, `sex`, `skin`, `money`, `health`, `lastlog`, `satiety`, `level`, `exp`, `played`, `house`, `setup`, `biz`, `mobile`, `number`, `Cents`, `lang`, `Age`, `Scolor`, `admin`, `clock`, `map`, `gps`, `online`) VALUES
-(1, 'User_Test', '123456', 'user@mail.ru', 0, 0, 0, '127.0.0.1', '20/3/2014', 1, 8, 99862, 75, '30/3/2014', 23, 4, 0, 3221, 1, '1|0', '1|4', 3, 8129259, 0, 0, 0, 0, 8, 0, 0, 0, -1);
+(1, 'User_Test', '123456', 'user@mail.ru', 0, 0, 0, '127.0.0.1', '20/3/2014', 1, 8, 99862, 75, '30/3/2014', 23, 4, 0, 3221, 1, '1|0', '1|4', 3, 8129259, 0, 0, 0, 0, 1, 0, 0, 0, -1);
 
 -- --------------------------------------------------------
 
