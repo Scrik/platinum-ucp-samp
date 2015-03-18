@@ -1,6 +1,6 @@
 <div id="title">Управление списком организаций</div>
 <div class="text-right">
-    <button href="/admin/main/get/fractions/rankControl/edit/{id}/add/" class="btn btn-primary ajax" id="gui">Добавить организацию</button>
+    <button href="/admin/main/get/fractions/orgControl/add/" class="btn btn-primary ajax" id="gui">Добавить организацию</button>
 </div><br>
 
 <table class="table table-bordered">
