@@ -60,7 +60,7 @@ class DevController extends Object {
                 }
                 break;
             case 'edit':
-                if (isset($_POST['news_add'])) {
+                if (isset($_POST['news_create'])) {
                     if ($this->model->dev->savePrivileges($args[1], $_POST)) {
                         $this->view->message(array('type' => 'success', 'text' => 'Изменения успешно сохранены.'));
                     } else {
