@@ -76,7 +76,7 @@
                     <div class="panel-heading">
                         <center>
                             <b>
-                                Основные настройки
+                                Дополнительные настройки
                             </b>
                         </center>
                     </div>
