@@ -29,7 +29,7 @@ class Ajax {
                             $this->object->view->refresh('/', true);
                             exit();
                         } else {
-                            $this->_error = $this->object->view->message(array('type' => 'warning', 'text' => 'На сайте ведутся технические работы, попробуйте зайти позже.'), true);
+                            $this->_error = $this->object->view->message(array('type' => 'warning', 'text' => 'РќР° СЃР°Р№С‚Рµ РІРµРґСѓС‚СЃСЏ С‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹, РїРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°Р№С‚Рё РїРѕР·Р¶Рµ.'), true);
                         }
                     }
                 }
@@ -60,7 +60,7 @@ class Ajax {
                 $this->object->view->refresh('/', true);
                 return FALSE;
             } else if (!$_SESSION['Name']) {
-                $error = $this->object->view->message(array('type' => 'info', 'text' => 'На сайте ведутся технические работы, попробуйте зайти позже.'), true);
+                $error = $this->object->view->message(array('type' => 'info', 'text' => 'РќР° СЃР°Р№С‚Рµ РІРµРґСѓС‚СЃСЏ С‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹, РїРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°Р№С‚Рё РїРѕР·Р¶Рµ.'), true);
             }
         }
 
@@ -68,7 +68,7 @@ class Ajax {
         $this->_getController($array);
         $result = ob_get_contents();
         ob_end_clean();
-        
+
         if ($this->_controller['controller'] != 'captcha' AND $this->_controller['controller'] != 'userbar') {
             $this->object->model->user->isLogin();
 
@@ -90,7 +90,8 @@ class Ajax {
             $result = '<div class="content">' . $result . '</div>';
             $this->object->view->set('content', $result);
             if ($this->_controller['controller'] == 'dev') {
-                $this->object->view->set('scripts', $this->object->view->sub_load('javascript/scripts'));
+                $ajax .= '<script type="text/javascript" src="/assets/view/javascript/ajax.js"></script>';
+                $this->object->view->set('scripts', $this->object->view->sub_load('javascript/scripts') . $ajax);
                 $this->object->view->load('admin/dev/main', false, true);
             } else {
                 $this->object->module->load('menu');
@@ -138,7 +139,7 @@ class Ajax {
         if (method_exists($controllerObject, $filter['method'])) {
             $controllerObject->$filter['method']($filter['attributes']);
         } else {
-            exit("Не могу загрузить URL: <b>{$filter['controller']}/{$filter['method']}</b>.");
+            exit("URL не найден: <b>{$filter['controller']}/{$filter['method']}</b>.");
         }
     }
 
