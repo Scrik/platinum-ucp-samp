@@ -29,7 +29,7 @@ class Ajax {
                             $this->object->view->refresh('/', true);
                             exit();
                         } else {
-                            $this->_error = $this->object->view->message(array('type' => 'warning', 'text' => 'РќР° СЃР°Р№С‚Рµ РІРµРґСѓС‚СЃСЏ С‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹, РїРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°Р№С‚Рё РїРѕР·Р¶Рµ.'), true);
+                            $this->_error = $this->object->view->message(array('type' => 'warning', 'text' => 'На сайте ведутся технические работы, попробуйте зайти позже.'), true);
                         }
                     }
                 }
@@ -60,7 +60,7 @@ class Ajax {
                 $this->object->view->refresh('/', true);
                 return FALSE;
             } else if (!$_SESSION['Name']) {
-                $error = $this->object->view->message(array('type' => 'info', 'text' => 'РќР° СЃР°Р№С‚Рµ РІРµРґСѓС‚СЃСЏ С‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹, РїРѕРїСЂРѕР±СѓР№С‚Рµ Р·Р°Р№С‚Рё РїРѕР·Р¶Рµ.'), true);
+                $error = $this->object->view->message(array('type' => 'info', 'text' => 'На сайте ведутся технические работы, попробуйте зайти позже.'), true);
             }
         }
 
