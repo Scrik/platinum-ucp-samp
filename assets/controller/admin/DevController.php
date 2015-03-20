@@ -230,7 +230,7 @@ class DevController extends Object {
         if ($array['general']['changeEmail'] == 1) {
             $array['changeEmail_selected'] = 'selected';
         }
-        if ($array['general']['recoveryEmail'] == 1) {
+        if ($array['general']['recovery'] == 1) {
             $array['recovery_selected'] = 'selected';
         }
 
