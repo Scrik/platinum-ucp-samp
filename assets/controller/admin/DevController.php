@@ -296,7 +296,11 @@ class DevController extends Object {
 
         if ($continue != FALSE) {
             $array = $this->model->dev->getMenu();
-            $array = $this->_filterMenu($array);
+            if (!empty($array)) {
+                $array = $this->_filterMenu($array);
+            } else {
+                $array = array(array('title' => 'Пусто', 'href' => 'Пусто', 'id' => null));
+            }
             $menu = $this->view->fromArray($array, $this->view->sub_load('admin/dev/menu/one'));
             $this->view->set('body', $menu);
             $this->view->load('admin/dev/menu/main', false, true);
@@ -304,7 +308,7 @@ class DevController extends Object {
     }
 
     private function _filterMenu($array) {
-        if (array_key_exists(0, $array)) {
+        if (!empty($array[0])) {
             $count = count($array);
             for ($i = 0; $i < $count; $i++) {
                 $array[$i] = $this->_filterMenu($array[$i]);
@@ -322,6 +326,9 @@ class DevController extends Object {
                     break;
                 case 3:
                     $array['visibleName'] = 'Только администраторам';
+                    break;
+                default:
+                    $array['visibleName'] = 'Недоступно';
                     break;
             }
             $array["type_{$array['type']}"] = 'selected';
