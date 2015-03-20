@@ -13,7 +13,7 @@ $(window).load(function () {
 
     history.pushState({page: page, type: "page"}, update(page), page);
 
-    $("a[href^='" + siteURL + "'], a[href^='/'], a[href^='./'], a[href^='../'], a[href^='#']").attr('class', 'ajax');
+    $("a[href^='" + siteURL + "'], a[href^='/'], a[href^='./'], a[href^='../']").addClass('ajax');
 
     window.onpopstate = function (e) {
         if (e.state !== null) {
@@ -85,6 +85,7 @@ $(window).load(function () {
             });
 
             data = JSON.stringify(array);
+
             $.post(action, {form: data}, function (date) {
                 id = hrefID[action];
                 $('#' + id).modal('hide');
@@ -96,6 +97,7 @@ $(window).load(function () {
                     NavigationCache[action] = date;
                 }
             });
+            updateCaptcha();
             free = true;
         }
         return false;
@@ -135,7 +137,7 @@ $(window).load(function () {
         }
     }
     function update(action) {
-        $('.content').find("a[href^='" + siteURL + "'], a[href^='/'], a[href^='./'], a[href^='../'], a[href^='#']").attr('class', 'ajax');
+        $('.content').find("a[href^='" + siteURL + "'], a[href^='/'], a[href^='./'], a[href^='../']").addClass('ajax');
         if (NavigationTitle[action] === undefined || NavigationTitle[action] === -1) {
             object = $('.content').find('#title');
             object.css('display', 'none');
@@ -160,6 +162,7 @@ $(window).load(function () {
             return title;
         }
     }
+
     function IsJsonString(str) {
         try {
             JSON.parse(str);
@@ -167,5 +170,12 @@ $(window).load(function () {
             return false;
         }
         return true;
+    }
+
+    function updateCaptcha() {
+         $('.content').find('#captcha');
+        if (captcha.attr('src') !== undefined) {
+            captcha.attr('src', captcha.attr('src') + Math.random());
+        }
     }
 });

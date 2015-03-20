@@ -26,7 +26,7 @@
             <td>
                 <div class="input-group">
                     <span class="input-group-addon">
-                        <img src="/captcha/get/">
+                        <img src="/captcha/get/" id="captcha">
                     </span>
                     <input type="text" class="form-control" name="captcha" placeholder="...равно?" required>
                 </div>

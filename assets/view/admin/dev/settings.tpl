@@ -10,7 +10,7 @@
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#database" id="tab" aria-controls="database" role="tab" data-toggle="tab">База Данных</a></li>
             <li role="presentation"><a href="#template" id="tab" aria-controls="template" role="tab" data-toggle="tab">Шаблон</a></li>
-            <li role="presentation"><a href="#general" id="tab" aria-controls="general" role="tab" data-toggle="tab">Основные настройки</a></li>
+            <li role="presentation"><a href="#general" id="tab" aria-controls="general" role="tab" data-toggle="tab">Доп. настройки</a></li>
             <li role="presentation"><a href="#online" id="tab" aria-controls="online" role="tab" data-toggle="tab">Проверка на онлайн</a></li>
         </ul>
 

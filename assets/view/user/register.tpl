@@ -1,6 +1,5 @@
 <div id="title">Регистрация</div>
 
-<div class="text-info text-center">Данная регистрация была сделана исключительно для демонстрации Platinum UCP, и не входит в комплект при продаже.</div>
 
 <form action="/user/register/" method="post">
     <table class="table table-bordered">
@@ -10,7 +9,7 @@
                     <span class="input-group-addon">
                         <i class="glyphicon glyphicon-user"></i>
                     </span> 
-                    <input type="text" name="name" class="form-control" .{4,24} placeholder="Введите никнейм персонажа" required>
+                    <input type="text" name="name" class="form-control".{4,24} placeholder="Введите никнейм персонажа" required>
                 </div>
             </td>
         </tr>
@@ -38,7 +37,7 @@
             <td>
                 <div class="input-group">
                     <span class="input-group-addon">
-                        <img src="/captcha/get/">
+                        <img src="/captcha/get/" id="captcha">
                     </span>
                     <input type="text" class="form-control" name="captcha" placeholder="...равно?" required>
                 </div>
