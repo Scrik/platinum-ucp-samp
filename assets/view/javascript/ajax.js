@@ -114,6 +114,7 @@ $(window).load(function () {
                 NavigationTitle[page] = $('.content').find('#title').text();
                 title = update(page);
                 document.title = title;
+                updateCaptcha();
                 history.pushState({page: page, type: "page"}, title, page);
             }
         });
@@ -173,8 +174,8 @@ $(window).load(function () {
     }
 
     function updateCaptcha() {
-         $('.content').find('#captcha');
-        if (captcha.attr('src') !== undefined) {
+        captcha = $('.content').find('#captcha');
+        if (captcha !== undefined) {
             captcha.attr('src', captcha.attr('src') + Math.random());
         }
     }
