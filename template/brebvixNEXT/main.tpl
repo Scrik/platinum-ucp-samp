@@ -21,14 +21,14 @@
         <![endif]-->
     </head>
     <body class="skin-blue">
-        <!-- Site wrapper -->
+
         <div class="wrapper">
 
             <header class="main-header">
                 <a href="/" class="ajax logo"><b>Platinum</b> UCP</a>
-                <!-- Header Navbar: style can be found in header.less -->
+
                 <nav class="navbar navbar-static-top" role="navigation">
-                    <!-- Sidebar toggle button-->
+
                     <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -43,14 +43,9 @@
                 </nav>
             </header>
 
-            <!-- =============================================== -->
-
-            <!-- Left side column. contains the sidebar -->
             <aside class="main-sidebar">
-                <!-- sidebar: style can be found in sidebar.less -->
                 <section class="sidebar">
-                    <!-- Sidebar user panel -->
-                    <!-- search form -->
+
                     <form action="/user/view/" method="post" class="sidebar-form">
                         <div class="input-group">
                             <input type="text" name="name" class="form-control" placeholder="Поиск игроков"/>
@@ -59,8 +54,7 @@
                             </span>
                         </div>
                     </form>
-                    <!-- /.search form -->
-                    <!-- sidebar menu: : style can be found in sidebar.less -->
+
                     <ul class="sidebar-menu">
                         <li class="header">Главно меню</li>
                             {menu_1}
@@ -68,10 +62,7 @@
                 </section>
                 <!-- /.sidebar -->
             </aside>
-
-            <!-- =============================================== -->
-
-            <!-- Content Wrapper. Contains page content -->
+                    
             <div class="content-wrapper">
                 <section class="content2">
                     <!-- Main content -->
@@ -80,9 +71,7 @@
                             <h3 class="box-title titleContent">{title}</h3>
                         </div>
                         <div class="box-body">
-                            <span class="content">
-                                {content}
-                            </span>
+                            {content}
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
                 </section>
@@ -95,5 +84,5 @@
             </div>
             <b>Platinum UCP SAMP</b>, разработчик <a href="http://brebvix.blogspot.com"><b>brebvix</b></a>.
         </footer>
-</body>
+    </body>
 </html>
