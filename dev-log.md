@@ -1,1 +1,3 @@
-
+В разработке:
+* Поддержка любого количества серверов
+![test](http://3.bp.blogspot.com/-AMpo1majfgw/VQ28imc_7EI/AAAAAAAAAKE/_L7yqH3-RR0/s1600/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%2B%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%2B(75).png)
